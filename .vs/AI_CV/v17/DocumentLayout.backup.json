@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "T:\\Source code c#\\AI_CV\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|t:\\source code c#\\ai_cv\\ai_cv\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|solutionrelative:ai_cv\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|t:\\source code c#\\ai_cv\\ai_cv\\controllers\\cvcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|solutionrelative:ai_cv\\controllers\\cvcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|t:\\source code c#\\ai_cv\\ai_cv\\ai_cv.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|solutionrelative:ai_cv\\ai_cv.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|t:\\source code c#\\ai_cv\\ai_cv\\services\\cvanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|solutionrelative:ai_cv\\services\\cvanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AI_CV",
+              "DocumentMoniker": "T:\\Source code c#\\AI_CV\\AI_CV\\AI_CV.csproj",
+              "RelativeDocumentMoniker": "AI_CV\\AI_CV.csproj",
+              "ToolTip": "T:\\Source code c#\\AI_CV\\AI_CV\\AI_CV.csproj",
+              "RelativeToolTip": "AI_CV\\AI_CV.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-20T11:44:27.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CVAnalysisService.cs",
+              "DocumentMoniker": "T:\\Source code c#\\AI_CV\\AI_CV\\Services\\CVAnalysisService.cs",
+              "RelativeDocumentMoniker": "AI_CV\\Services\\CVAnalysisService.cs",
+              "ToolTip": "T:\\Source code c#\\AI_CV\\AI_CV\\Services\\CVAnalysisService.cs",
+              "RelativeToolTip": "AI_CV\\Services\\CVAnalysisService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAmwC0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T04:20:42.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CVController.cs",
+              "DocumentMoniker": "T:\\Source code c#\\AI_CV\\AI_CV\\Controllers\\CVController.cs",
+              "RelativeDocumentMoniker": "AI_CV\\Controllers\\CVController.cs",
+              "ToolTip": "T:\\Source code c#\\AI_CV\\AI_CV\\Controllers\\CVController.cs",
+              "RelativeToolTip": "AI_CV\\Controllers\\CVController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAWwDIAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T04:25:11.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "T:\\Source code c#\\AI_CV\\AI_CV\\appsettings.json",
+              "RelativeDocumentMoniker": "AI_CV\\appsettings.json",
+              "ToolTip": "T:\\Source code c#\\AI_CV\\AI_CV\\appsettings.json",
+              "RelativeToolTip": "AI_CV\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T04:24:23.063Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1170,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+@model AI_CV.Models.CVAnalysisResult
+@{
+    ViewData["Title"] = "Kết quả phân tích CV";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center">Kết quả phân tích CV</h3>
+                </div>
+                <div class="card-body">
+                    @if (Model.AnalysisStatus == "Completed")
+                    {
+                        <div class="alert alert-success">
+                            <h4 class="alert-heading">Phân tích thành công!</h4>
+                            <p>CV đã được phân tích thành công. Dưới đây là kết quả trích xuất:</p>
+                        </div>
+
+                        <!-- Thông tin cơ bản -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-header">
+                                        <h5>Thông tin cơ bản</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><strong>Tên file:</strong> @Model.FileName</p>
+                                        <p><strong>Ngày tải lên:</strong> @Model.UploadDate.ToString("dd/MM/yyyy HH:mm")</p>
+                                        @if (Model.ExtractedInformation != null)
+                                        {
+                                            @if (Model.ExtractedInformation.ContainsKey("FullName"))
+                                            {
+                                                <p><strong>Họ và tên:</strong> @Model.ExtractedInformation["FullName"]</p>
+                                            }
+                                            @if (Model.ExtractedInformation.ContainsKey("Email"))
+                                            {
+                                                <p><strong>Email:</strong> @Model.ExtractedInformation["Email"]</p>
+                                            }
+                                            @if (Model.ExtractedInformation.ContainsKey("Phone"))
+                                            {
+                                                <p><strong>Số điện thoại:</strong> @Model.ExtractedInformation["Phone"]</p>
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-header">
+                                        <h5>Kỹ năng</h5>
+                                    </div>
+                                    <div class="card-body">
+                                         @if (Model.ExtractedInformation != null && Model.ExtractedInformation.ContainsKey("Skills"))
+                                        {
+                                            <p>@Model.ExtractedInformation["Skills"]</p>
+                                        }
+                                        else
+                                        {
+                                            <p class="text-muted">Không tìm thấy thông tin về kỹ năng</p>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Văn bản được trích xuất -->
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <h5>Văn bản được trích xuất</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="bg-light p-3">@Model.ExtractedText</pre>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-danger">
+                            <h4 class="alert-heading">Lỗi phân tích!</h4>
+                            <p>@Model.ErrorMessage</p>
+                        </div>
+                    }
+
+                    <div class="text-center mt-4">
+                        <a asp-action="Index" class="btn btn-primary">
+                            <i class="fas fa-arrow-left"></i> Quay lại trang tải lên
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
