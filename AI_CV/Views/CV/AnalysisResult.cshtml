@@ -6,41 +6,68 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-12">
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="text-center">Kết quả phân tích CV</h3>
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="text-center mb-0">Kết quả phân tích CV</h3>
                 </div>
                 <div class="card-body">
                     @if (Model.AnalysisStatus == "Completed")
                     {
                         <div class="alert alert-success">
-                            <h4 class="alert-heading">Phân tích thành công!</h4>
-                            <p>CV đã được phân tích thành công. Dưới đây là kết quả trích xuất:</p>
+                            <h4 class="alert-heading">
+                                <i class="fas fa-check-circle"></i> Phân tích thành công!
+                            </h4>
+                            <p class="mb-0">CV đã được phân tích thành công. Dưới đây là kết quả trích xuất:</p>
                         </div>
 
                         <!-- Thông tin cơ bản -->
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="card mb-3">
-                                    <div class="card-header">
-                                        <h5>Thông tin cơ bản</h5>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="card-header bg-info text-white">
+                                        <h5 class="mb-0">
+                                            <i class="fas fa-user"></i> Thông tin cơ bản
+                                        </h5>
                                     </div>
                                     <div class="card-body">
-                                        <p><strong>Tên file:</strong> @Model.FileName</p>
-                                        <p><strong>Ngày tải lên:</strong> @Model.UploadDate.ToString("dd/MM/yyyy HH:mm")</p>
+                                        <div class="mb-3">
+                                            <label class="text-muted">Tên file</label>
+                                            <p class="mb-0">@Model.FileName</p>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="text-muted">Ngày tải lên</label>
+                                            <p class="mb-0">@Model.UploadDate.ToString("dd/MM/yyyy HH:mm")</p>
+                                        </div>
                                         @if (Model.ExtractedInformation != null)
                                         {
                                             @if (Model.ExtractedInformation.ContainsKey("FullName"))
                                             {
-                                                <p><strong>Họ và tên:</strong> @Model.ExtractedInformation["FullName"]</p>
+                                                <div class="mb-3">
+                                                    <label class="text-muted">Họ và tên</label>
+                                                    <p class="mb-0">@Model.ExtractedInformation["FullName"]</p>
+                                                </div>
                                             }
                                             @if (Model.ExtractedInformation.ContainsKey("Email"))
                                             {
-                                                <p><strong>Email:</strong> @Model.ExtractedInformation["Email"]</p>
+                                                <div class="mb-3">
+                                                    <label class="text-muted">Email</label>
+                                                    <p class="mb-0">
+                                                        <a href="mailto:@Model.ExtractedInformation["Email"]" class="text-decoration-none">
+                                                            @Model.ExtractedInformation["Email"]
+                                                        </a>
+                                                    </p>
+                                                </div>
                                             }
                                             @if (Model.ExtractedInformation.ContainsKey("Phone"))
                                             {
-                                                <p><strong>Số điện thoại:</strong> @Model.ExtractedInformation["Phone"]</p>
+                                                <div class="mb-3">
+                                                    <label class="text-muted">Số điện thoại</label>
+                                                    <p class="mb-0">
+                                                        <a href="tel:@Model.ExtractedInformation["Phone"]" class="text-decoration-none">
+                                                            @Model.ExtractedInformation["Phone"]
+                                                        </a>
+                                                    </p>
+                                                </div>
                                             }
                                         }
                                     </div>
@@ -48,39 +75,111 @@
                             </div>
 
                             <div class="col-md-6">
-                                <div class="card mb-3">
-                                    <div class="card-header">
-                                        <h5>Kỹ năng</h5>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="card-header bg-success text-white">
+                                        <h5 class="mb-0">
+                                            <i class="fas fa-tools"></i> Kỹ năng
+                                        </h5>
                                     </div>
                                     <div class="card-body">
-                                         @if (Model.ExtractedInformation != null && Model.ExtractedInformation.ContainsKey("Skills"))
+                                        @if (Model.ExtractedInformation != null && Model.ExtractedInformation.ContainsKey("Skills"))
                                         {
-                                            <p>@Model.ExtractedInformation["Skills"]</p>
+                                            var skills = Model.ExtractedInformation["Skills"].Split('\n');
+                                            <div class="skills-container">
+                                                @foreach (var skill in skills)
+                                                {
+                                                    if (!string.IsNullOrWhiteSpace(skill))
+                                                    {
+                                                        <div class="skill-item mb-2">
+                                                            @if (skill.Contains(":"))
+                                                            {
+                                                                var parts = skill.Split(':');
+                                                                <div class="skill-category text-muted">@parts[0]</div>
+                                                                <div class="skill-name">@parts[1]</div>
+                                                            }
+                                                            else
+                                                            {
+                                                                <div class="skill-name">@skill</div>
+                                                            }
+                                                        </div>
+                                                    }
+                                                }
+                                            </div>
                                         }
                                         else
                                         {
-                                            <p class="text-muted">Không tìm thấy thông tin về kỹ năng</p>
+                                            <div class="alert alert-warning mb-0">
+                                                <i class="fas fa-exclamation-triangle"></i> Không tìm thấy thông tin về kỹ năng
+                                            </div>
                                         }
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Học vấn và Kinh nghiệm -->
+                        <div class="row">
+                            @if (Model.ExtractedInformation != null)
+                            {
+                                @if (Model.ExtractedInformation.ContainsKey("Education"))
+                                {
+                                    <div class="col-md-6">
+                                        <div class="card mb-3 shadow-sm">
+                                            <div class="card-header bg-warning text-dark">
+                                                <h5 class="mb-0">
+                                                    <i class="fas fa-graduation-cap"></i> Học vấn
+                                                </h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="education-content">
+                                                    @Model.ExtractedInformation["Education"]
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+
+                                @if (Model.ExtractedInformation.ContainsKey("Experience"))
+                                {
+                                    <div class="col-md-6">
+                                        <div class="card mb-3 shadow-sm">
+                                            <div class="card-header bg-danger text-white">
+                                                <h5 class="mb-0">
+                                                    <i class="fas fa-briefcase"></i> Kinh nghiệm
+                                                </h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="experience-content">
+                                                    @Model.ExtractedInformation["Experience"]
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+
                         <!-- Văn bản được trích xuất -->
-                        <div class="card mb-3">
-                            <div class="card-header">
-                                <h5>Văn bản được trích xuất</h5>
+                        <div class="card mb-3 shadow-sm">
+                            <div class="card-header bg-secondary text-white">
+                                <h5 class="mb-0">
+                                    <i class="fas fa-file-alt"></i> Văn bản được trích xuất
+                                </h5>
                             </div>
                             <div class="card-body">
-                                <pre class="bg-light p-3">@Model.ExtractedText</pre>
+                                <div class="extracted-text-container">
+                                    <pre class="bg-light p-3 rounded">@Model.ExtractedText</pre>
+                                </div>
                             </div>
                         </div>
                     }
                     else
                     {
                         <div class="alert alert-danger">
-                            <h4 class="alert-heading">Lỗi phân tích!</h4>
-                            <p>@Model.ErrorMessage</p>
+                            <h4 class="alert-heading">
+                                <i class="fas fa-exclamation-circle"></i> Lỗi phân tích!
+                            </h4>
+                            <p class="mb-0">@Model.ErrorMessage</p>
                         </div>
                     }
 
@@ -93,4 +192,49 @@
             </div>
         </div>
     </div>
-</div> 
+</div>
+
+<style>
+    .skill-item {
+        padding: 8px;
+        border-radius: 4px;
+        background-color: #f8f9fa;
+    }
+
+    .skill-category {
+        font-size: 0.9em;
+        margin-bottom: 4px;
+    }
+
+    .skill-name {
+        font-weight: 500;
+    }
+
+    .education-content, .experience-content {
+        white-space: pre-line;
+    }
+
+    .extracted-text-container {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    .extracted-text-container pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    .card {
+        border: none;
+        border-radius: 8px;
+    }
+
+    .card-header {
+        border-radius: 8px 8px 0 0 !important;
+    }
+
+    .alert {
+        border-radius: 8px;
+    }
+</style> 

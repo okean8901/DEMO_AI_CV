@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "T:\\Source code c#\\AI_CV\\",
+  "WorkspaceRootPath": "T:\\Source code c#\\AI_CV\\DEMO_AI_CV\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|t:\\source code c#\\ai_cv\\ai_cv\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|t:\\source code c#\\ai_cv\\demo_ai_cv\\ai_cv\\services\\cvanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|solutionrelative:ai_cv\\services\\cvanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|t:\\source code c#\\ai_cv\\demo_ai_cv\\ai_cv\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|solutionrelative:ai_cv\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|t:\\source code c#\\ai_cv\\ai_cv\\controllers\\cvcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|t:\\source code c#\\ai_cv\\demo_ai_cv\\ai_cv\\controllers\\cvcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|solutionrelative:ai_cv\\controllers\\cvcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|t:\\source code c#\\ai_cv\\ai_cv\\ai_cv.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|t:\\source code c#\\ai_cv\\demo_ai_cv\\ai_cv\\ai_cv.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|solutionrelative:ai_cv\\ai_cv.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|t:\\source code c#\\ai_cv\\ai_cv\\services\\cvanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B1CA768-66FA-454B-AF9B-C58E8FA163D6}|AI_CV\\AI_CV.csproj|solutionrelative:ai_cv\\services\\cvanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,11 +58,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AI_CV",
-              "DocumentMoniker": "T:\\Source code c#\\AI_CV\\AI_CV\\AI_CV.csproj",
+              "DocumentIndex": 3,
+              "Title": "AI_CV.csproj",
+              "DocumentMoniker": "T:\\Source code c#\\AI_CV\\DEMO_AI_CV\\AI_CV\\AI_CV.csproj",
               "RelativeDocumentMoniker": "AI_CV\\AI_CV.csproj",
-              "ToolTip": "T:\\Source code c#\\AI_CV\\AI_CV\\AI_CV.csproj",
+              "ToolTip": "T:\\Source code c#\\AI_CV\\DEMO_AI_CV\\AI_CV\\AI_CV.csproj",
               "RelativeToolTip": "AI_CV\\AI_CV.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -71,24 +71,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "CVAnalysisService.cs",
-              "DocumentMoniker": "T:\\Source code c#\\AI_CV\\AI_CV\\Services\\CVAnalysisService.cs",
+              "DocumentMoniker": "T:\\Source code c#\\AI_CV\\DEMO_AI_CV\\AI_CV\\Services\\CVAnalysisService.cs",
               "RelativeDocumentMoniker": "AI_CV\\Services\\CVAnalysisService.cs",
-              "ToolTip": "T:\\Source code c#\\AI_CV\\AI_CV\\Services\\CVAnalysisService.cs",
+              "ToolTip": "T:\\Source code c#\\AI_CV\\DEMO_AI_CV\\AI_CV\\Services\\CVAnalysisService.cs",
               "RelativeToolTip": "AI_CV\\Services\\CVAnalysisService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAmwC0AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAALkAAAAAAAAAAAAowNEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T04:20:42.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CVController.cs",
-              "DocumentMoniker": "T:\\Source code c#\\AI_CV\\AI_CV\\Controllers\\CVController.cs",
+              "DocumentMoniker": "T:\\Source code c#\\AI_CV\\DEMO_AI_CV\\AI_CV\\Controllers\\CVController.cs",
               "RelativeDocumentMoniker": "AI_CV\\Controllers\\CVController.cs",
-              "ToolTip": "T:\\Source code c#\\AI_CV\\AI_CV\\Controllers\\CVController.cs",
+              "ToolTip": "T:\\Source code c#\\AI_CV\\DEMO_AI_CV\\AI_CV\\Controllers\\CVController.cs",
               "RelativeToolTip": "AI_CV\\Controllers\\CVController.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAWwDIAAAB0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -97,13 +97,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
-              "DocumentMoniker": "T:\\Source code c#\\AI_CV\\AI_CV\\appsettings.json",
+              "DocumentMoniker": "T:\\Source code c#\\AI_CV\\DEMO_AI_CV\\AI_CV\\appsettings.json",
               "RelativeDocumentMoniker": "AI_CV\\appsettings.json",
-              "ToolTip": "T:\\Source code c#\\AI_CV\\AI_CV\\appsettings.json",
+              "ToolTip": "T:\\Source code c#\\AI_CV\\DEMO_AI_CV\\AI_CV\\appsettings.json",
               "RelativeToolTip": "AI_CV\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-20T04:24:23.063Z",
               "EditorCaption": ""
